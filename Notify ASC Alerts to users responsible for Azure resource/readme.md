@@ -6,7 +6,7 @@ This Logic App for Workflow Automations will notify ASC generated threat alerts 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FNotify%2520ASC%2520Alerts%2520to%2520users%2520responsible%2520for%2520Azure%2520resource%2Fazuredeploy.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FRemediation%2Fscripts%2FNotify%2FASC%2FAlerts%2Fto%2Fusers%2Fresponsible%2Ffor%2FAzure%2Fresource%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FNotify%2520ASC%2520Alerts%2520to%2520users%2520responsible%2520for%2520Azure%2520resource%2Fazuredeploy.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
 </a>
 
