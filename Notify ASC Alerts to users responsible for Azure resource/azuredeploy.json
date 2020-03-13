@@ -20,20 +20,20 @@
         }
     },
     "variables": {
-        "ASCAssessmentConnectionName": "[concat('ascassessment-', parameters('LogicAppName'))]",
+        "ascalertConnectionName": "[concat('ascalert-', parameters('LogicAppName'))]",
         "office365ConnectionName": "[concat('office365-', parameters('LogicAppName'))]"        
     },
     "resources": [
         {
             "type": "Microsoft.Web/connections",
             "apiVersion": "2016-06-01",
-            "name": "[variables('ASCAssessmentConnectionName')]",
+            "name": "[variables('ascalertConnectionName')]",
             "location": "[resourceGroup().location]",
             "properties": {
                 "displayName": "[parameters('UserName')]",
                 "customParameterValues": {},
                 "api": {
-                    "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/ascassessment')]"
+                    "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/ascalert')]"
                 }
             }
         },
@@ -60,7 +60,7 @@
             },
             "dependsOn": [
                 "[resourceId('Microsoft.Web/connections', variables('office365ConnectionName'))]",
-                "[resourceId('Microsoft.Web/connections', variables('ASCAssessmentConnectionName'))]"
+                "[resourceId('Microsoft.Web/connections', variables('ascalertConnectionName'))]"
             ],
             "identity": {
                 "type": "SystemAssigned"
@@ -322,10 +322,10 @@
                                 "connectionName": "office365",
                                 "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/office365')]"
                             },
-                            "ascassessment": {
-                                "connectionId": "[resourceId('Microsoft.Web/connections', variables('ASCAssessmentConnectionName'))]",
-                                "connectionName": "arm",
-                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/ascassessment')]"
+                            "ascalert": {
+                                "connectionId": "[resourceId('Microsoft.Web/connections', variables('ascalertConnectionName'))]",
+                                "connectionName": "ascalert",
+                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/ascalert')]"
                             }
                         }
                     }
