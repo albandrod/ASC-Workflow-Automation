@@ -127,7 +127,7 @@
                                             {
                                                 "not": {
                                                     "equals": [
-                                                        "@body('Parse_JSON')?['properties']?['']",
+                                                        "@body('Parse_JSON')?['properties']?['networkSecurityGroup']?['id']",
                                                         "@null"
                                                     ]
                                                 }
