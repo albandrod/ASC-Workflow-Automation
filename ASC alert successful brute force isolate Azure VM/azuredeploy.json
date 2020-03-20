@@ -21,7 +21,7 @@
     },
     "variables": {
         "ascalertConnectionName": "[concat('ascalert-', parameters('PlaybookName'))]",
-        "office365ConnectionName": "[concat('ascalert-', parameters('PlaybookName'))]"
+        "office365ConnectionName": "[concat('office365-', parameters('PlaybookName'))]"
     },
     "resources": [
         {
