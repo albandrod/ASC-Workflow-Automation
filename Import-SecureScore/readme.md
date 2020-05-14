@@ -13,7 +13,7 @@ This Logic App will on a timer basis daily or weekly obtain your subscriptions A
 **Additional Post Install Notes:**
 
 Ensure to authorize the AzureLogAnalyticsDataCollector API by giving it the Azure Security Center LogAnalytics Workspace ID and Key
-<img src="https://raw.githubusercontent.com/Azure-Sentinel/DataConnectors/master/Prisma/images/authorize.png"/>
+<img src="https://github.com/swiftsolves-msft/ASC-Workflow-Automation/blob/master/Import-SecureScore/images/authorize.png"/>
 </a>
 
 To learn more about SecureScore: https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls
