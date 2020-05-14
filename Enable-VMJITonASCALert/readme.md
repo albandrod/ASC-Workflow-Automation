@@ -3,10 +3,10 @@ author: Nathan Swift
 
 This Logic App will update a Azure VM to use JIT access for the OS management port when ASC Alerts fire. Ensure Worflow automation fires on alerts contains ”SSH Brute Force” or “Suspicious incoming RDP network” or “Suspicious incoming SSH network"
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FEnable-VMJITonASCAlert%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FEnable-VMJITonASCALert%2Fazuredeploy.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FEnable-VMJITonASCAlert%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswiftsolves-msft%2FASC-Workflow-Automation%2Fmaster%2FEnable-VMJITonASCALert%2Fazuredeploy.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
 </a>
 
